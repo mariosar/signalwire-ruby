@@ -6,7 +6,7 @@ module Signalwire::Relay::Messaging
 
     FIELDS =  %i{body message_id context tags 
                 from_number to_number media 
-                segments message_state}.freeze
+                segments message_state direction}.freeze
     def message_params
       dig(:params, :params, :params)
     rescue StandardError
